@@ -21,7 +21,7 @@ public class HzClfhtTpeZrhtqdController {
 	private HzClfhtTpeZrhtqdRepository hzClfhtTpeZrhtqdRepository;
 
 	@GetMapping("/HzClfhtTpeZrhtqd")
-	public String fyCommonTpuYwsqrForm(Model model, @ModelAttribute HzClfhtTpeZrhtqd hzClfhtTpeZrhtqd) {
+	public String hzClfhtTpeZrhtqd(Model model, @ModelAttribute HzClfhtTpeZrhtqd hzClfhtTpeZrhtqd) {
 
 		model.addAttribute("fwzl", hzClfhtTpeZrhtqd.getFwzl());
 
