@@ -1,4 +1,4 @@
-package com.pydevdb.application.domain;
+package com.soarhz.application.domain;
 
 import java.io.Serializable;
 import java.util.Date;

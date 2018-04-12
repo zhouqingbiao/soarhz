@@ -1,4 +1,4 @@
-package com.pydevdb.application.web;
+package com.soarhz.application.web;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -11,8 +11,8 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
-import com.pydevdb.application.domain.HzClfhtTpeZrhtqd;
-import com.pydevdb.application.service.HzClfhtTpeZrhtqdRepository;
+import com.soarhz.application.domain.HzClfhtTpeZrhtqd;
+import com.soarhz.application.service.HzClfhtTpeZrhtqdRepository;
 
 @Controller
 public class HzClfhtTpeZrhtqdController {
