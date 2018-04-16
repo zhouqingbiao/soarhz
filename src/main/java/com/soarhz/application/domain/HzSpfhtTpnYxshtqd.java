@@ -10,8 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(schema = "HZ_CLFHT", name = "TPE_ZRHTQD")
-public class HzClfhtTpeZrhtqd implements Serializable {
+@Table(schema = "HZ_SPFHT", name = "TPN_YXSHTQD")
+public class HzSpfhtTpnYxshtqd implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -20,13 +20,10 @@ public class HzClfhtTpeZrhtqd implements Serializable {
 	private Long id;
 
 	@Column
-	private Long zrhtcode;
+	private Long yxshtcode;
 
 	@Column
-	private String htbh;
-
-	@Column
-	private Long htdxid;
+	private Long fwid;
 
 	@Column
 	private Long fwcode;
@@ -41,6 +38,12 @@ public class HzClfhtTpeZrhtqd implements Serializable {
 	private Double htje;
 
 	@Column
+	private Double dj;
+
+	@Column
+	private String htbh;
+
+	@Column
 	private Date htqdsj;
 
 	public Long getId() {
@@ -51,28 +54,20 @@ public class HzClfhtTpeZrhtqd implements Serializable {
 		this.id = id;
 	}
 
-	public Long getZrhtcode() {
-		return zrhtcode;
+	public Long getYxshtcode() {
+		return yxshtcode;
 	}
 
-	public void setZrhtcode(Long zrhtcode) {
-		this.zrhtcode = zrhtcode;
+	public void setYxshtcode(Long yxshtcode) {
+		this.yxshtcode = yxshtcode;
 	}
 
-	public String getHtbh() {
-		return htbh;
+	public Long getFwid() {
+		return fwid;
 	}
 
-	public void setHtbh(String htbh) {
-		this.htbh = htbh;
-	}
-
-	public Long getHtdxid() {
-		return htdxid;
-	}
-
-	public void setHtdxid(Long htdxid) {
-		this.htdxid = htdxid;
+	public void setFwid(Long fwid) {
+		this.fwid = fwid;
 	}
 
 	public Long getFwcode() {
@@ -105,6 +100,22 @@ public class HzClfhtTpeZrhtqd implements Serializable {
 
 	public void setHtje(Double htje) {
 		this.htje = htje;
+	}
+
+	public Double getDj() {
+		return dj;
+	}
+
+	public void setDj(Double dj) {
+		this.dj = dj;
+	}
+
+	public String getHtbh() {
+		return htbh;
+	}
+
+	public void setHtbh(String htbh) {
+		this.htbh = htbh;
 	}
 
 	public Date getHtqdsj() {
